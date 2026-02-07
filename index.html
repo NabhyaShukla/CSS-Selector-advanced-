@@ -11,6 +11,9 @@
             border: 2px rgb(43, 255, 0) solid;
         }
 
+        
+        
+
         input[type="password"] {
             border: 2px rgb(252, 38, 0) solid;
         }
@@ -40,7 +43,7 @@
 
         #hov {
 
-            background-color: rgb(96, 111, 223);
+            background-color: rgb(164, 175, 255);
             height: 50px;
             width: 100px;
             border: 3px solid grey;
@@ -63,12 +66,55 @@
         h3:not(.two){
             color: rgb(62, 96, 156);
         }
+
+        input[type="email"]:focus {
+            background-color: rgb(255, 255, 0);
+        }
+
+        a:visited {
+            color: rgb(0, 0, 0);
+        }
+
+        /* pseudo element */
+        .pe::before {
+            content: "🧑‍🚀STAR ";
+        }
+
+        .pe::after{
+            content: " Provider";
+        }
+
+        header {
+            height: 200px;
+            background-color: rgb(140, 242, 255);
+        }
+
+        header > h1::first-letter {
+            font-size: 50px;
+            color: rgb(255, 0, 0);
+        }
+
+
     </style>
 </head>
 
 <body>
 
-    <form action="#">
+    <header>
+        <h1>Welcome to my shop</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <form action="">
         <div>
             <label for="">Email:</label>
             <input type="email" name="" id="">
@@ -102,6 +148,14 @@
     <h3 class="one">Heading1</h3>
     <h3 class="two">Heading2</h3>
     <h3 class="three">Heading3</h3>
+
+    <p class="pe">Content</p>
+    <p class="pe">Content</p>
+    <p class="pe">Content</p>
+    <p class="pe">Content</p>
+
+    <a href="#">Click</a>
+
 
 
 
