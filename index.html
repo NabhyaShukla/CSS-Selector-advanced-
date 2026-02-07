@@ -14,14 +14,27 @@
             border: 2px rgb(252, 38, 0) solid;
         }
 
-        ul  li {
+        /* ul  li {
             color: rgb(19, 105, 118);
             
+        } */
+
+        li:first-child {
+            color: coral;
         }
 
+        li:nth-child(2) {
+            background-color: aquamarine;
+        }
+
+        li:last-child {
+            color: violet;
+        }
         h1 + p {
             color: rgb(40, 131, 84);
         }
+
+        
     </style>
 </head>
 <body>
@@ -33,7 +46,7 @@
         </div>
 
         <div>
-            <label for="">Enter Password</label>
+            <label for="">Password:</label>
             <input type="password">
         </div>
         <button type="submit">Login</button>
